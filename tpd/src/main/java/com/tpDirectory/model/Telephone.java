@@ -17,7 +17,7 @@ public class Telephone {
 	private Long id;
 	
 	@NotBlank(message = "mobileNumber is required")
-	@Size(min = 10, max = 10, message="Enter a valid Phone number")
+	@Size(min = 10, max = 10, message="Enter a valid Phone number of 10 digits")
 	private String phone;
 	
 	@Size(min=4 , message="Name Should have atleast 2 characters")
