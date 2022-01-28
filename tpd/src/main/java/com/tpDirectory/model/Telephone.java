@@ -20,14 +20,15 @@ public class Telephone {
 	@Size(min = 10, max = 10, message="Enter a valid Phone number of 10 digits")
 	private String phone;
 	
-	@Size(min=4 , message="Name Should have atleast 2 characters")
+	@Size(min=4 , message="Name Should have atleast 4 characters")
 	private String name;
 	
 	@NotBlank(message="Email should not be blank !!")
 	private String email;
 	
+	@Size(min=2 , message="City Should have atleast 2 characters")
 	private String city;
-	@Size(min=6,max=6, message="Enter a Valid pincode of 6 digit")
+	@Size(min=6,max=6, message="Enter a Valid pincode of 6 digits")
 	private String pincode;
 	
 	public Long getId() {
